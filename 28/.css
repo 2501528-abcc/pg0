@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    padding-top: 80px; 
+    text-align: center;
+}
+
+nav {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px 0;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    width: 0%;
+    height: 2px;
+    background-color: #00bcd4;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+nav ul li.current a {
+    color: #00bcd4;
+    font-weight: bold;
+}
+
+nav ul li.current a::after {
+    width: 100%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    padding: 20px;
+    flex-wrap: wrap; 
+}
+
+.profile img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile .text {
+    max-width: 400px;
+    text-align: left;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+}
+
+
+.食べ物 img {
+  width: 400px;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  flex-shrink: 0;
+  transition: transform 0.4s ease;
+}
+
+.食べ物:hover img {
+  transform: scale(1.05);
+}
+
+
+.食べ物 span {
+  color: #ff5252;
+  font-weight: 700;
+}
+
+.漫画 img {
+  width: 400px;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  flex-shrink: 0;
+  transition: transform 0.4s ease;
+}
+
+.漫画:hover img {
+  transform: scale(1.05);
+}
+
+
+.漫画 span {
+  color: #ff5252;
+  font-weight: 700;
+}
+
+.映画 img {
+  width: 400px;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  flex-shrink: 0;
+  transition: transform 0.4s ease;
+}
+
+.映画:hover img {
+  transform: scale(1.05);
+}
+
+
+.映画 span {
+  color: #ff5252;
+  font-weight: 700;
+}
+
+.hidden-image {
+    display: none;
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-label {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0078d7;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+}
+
+.hidden-image {
+    display: none;
+    margin-top: 20px;
+    max-width: 80%;
+    height: auto;
+}
+
+#show-image:checked + .image-label + .自由 .hidden-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.自由 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+      
+      
+
